@@ -1,0 +1,55 @@
+<html>
+
+    <head>
+        <title>Tester</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/ico" href="icon.ico" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand">Tester</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a onclick="openHTML()">HTML</a></li>
+                        <li><a onclick="openCSS()">CSS</a></li>
+                        <li><a onclick="openJS()">JavaScript</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="shtml" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeHTML()">&times;</a>
+            <h3 class="head">HTML</h3>
+            <div class="container2"><textarea class="editor" placeholder="HTML" id="html"></textarea></div>
+        </div>
+        <div id="scss" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeCSS()">&times;</a>
+            <h3 class="head">CSS</h3>
+            <div class="container2"><textarea class="editor" placeholder="CSS" id="css"></textarea></div>
+        </div>
+        <div id="sjs" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeJS()">&times;</a>
+            <h3 class="head">JavaScript</h3>
+            <div class="container2"><textarea class="editor" placeholder="JavaScript" id="js"></textarea></div>
+        </div>
+        <div class="container">
+            <iframe class="outwin" id="output"></iframe>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+
+</html>
